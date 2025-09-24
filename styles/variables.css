@@ -3,13 +3,16 @@
   --bg-color-green: #245852;
 
   --color-white: #fff;
-  --color-green: #016545;
+  --color-green: #016545; /* #01996D */
   --color-black: #000;
 
   --button-border-radius: 10px;
   --button-hover-color: #00412c;
 
   --nav-font-color: #292929;
+  --desc-font-color: #484848;
+
+  --divider-color: #d6d6d6;
 }
 
 /* media breakpoints: 992px, 768px, 576px, 480px */
