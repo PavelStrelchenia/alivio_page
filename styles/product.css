@@ -1,0 +1,131 @@
+.product {
+  background-color: var(--bg-color-white);
+  padding: 115px 0 200px 0;
+}
+.product__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 85px;
+}
+.product__content-img {
+  max-width: 640px;
+  height: 570px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 64/57;
+}
+.product__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+  place-items: start;
+  gap: 30px;
+}
+.product__subtitle {
+  font-size: 25;
+}
+.product__title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-green);
+}
+.product__desc {
+  font-size: 20px;
+  color: var(--desc-font-color);
+}
+.product__content .btn {
+  width: 230px;
+  height: 65px;
+}
+
+.product__window {
+  position: absolute;
+  padding: 30px 0;
+  bottom: -70px;
+  left: -50px;
+  width: 300px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-white);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px 0 rgba(165, 165, 165, 0.25);
+}
+.window__title {
+  font-size: 15px;
+  font-weight: 600;
+}
+.window__divider {
+  width: 110px;
+  height: 1px;
+  background-color: var(--color-black);
+}
+.window__img {
+  width: 57px;
+  height: 57px;
+  object-fit: cover;
+}
+.window__name {
+  font-size: 12px;
+}
+.window__desc {
+  font-size: 16px;
+  font-weight: 700;
+}
+.window__list {
+  font-size: 10px;
+  padding: 16px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.window__list li {
+  list-style-type: disc;
+}
+
+@media (max-width: 992px) {
+  .product__content {
+    max-width: 450px;
+  }
+
+  .product__window {
+    display: none;
+  }
+
+  .product__subtitle {
+    font-size: 20;
+  }
+  .product__title {
+    font-size: 30px;
+  }
+  .product__desc {
+    font-size: 16px;
+  }
+  .product__content .btn {
+    width: 200px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product__content {
+    align-items: center;
+    text-align: center;
+  }
+}
